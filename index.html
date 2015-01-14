@@ -21,14 +21,10 @@
     $(window).scroll(function () {
       var tempScrollTop = $(window).scrollTop();
       console.log(tempScrollTop);
-      if (tempScrollTop > 30){
-        $("#banner").animate({
-            "height": 100
-        }, 50 );  
+      if (tempScrollTop > 50){
+        $("#banner").addClass("banner-hidden"); 
       }else if (tempScrollTop < 30){
-         $("#banner").animate({
-            "height": 300
-        }, 50 );  
+         $("#banner").removeClass("banner-hidden"); 
       }
     });
   });

@@ -7,7 +7,16 @@
 	height: 300px;
 	background-color: grey;
 	color: yellow;
+	o-transition: all .3s linear;
+	-ms-transition: all .3s linear;
+	-moz-transition: all .3s linear;
+	-webkit-transition: all .3s linear;
+	transition: all .3s linear;
+}
+.banner-hidden{
+	height: 75px;
 }
 #content{
 	height: 700px;
 }
+
