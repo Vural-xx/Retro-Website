@@ -4,7 +4,7 @@
 }
 
 #banner{
-	height: 300px;
+	height: 100px;
 	background-color: grey;
 	color: yellow;
 	o-transition: all .3s linear;
@@ -18,5 +18,14 @@
 }
 #content{
 	height: 700px;
+	background: url(../img/8_Bit_Mario_big.png);
+	background-repeat: no-repeat;
+	background-position:50% 50%;
 }
+
+footer{
+	height: 50px;
+	background-color: grey;
+}
+
 
