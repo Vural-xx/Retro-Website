@@ -5,19 +5,23 @@
 
 #banner{
 	height: 100px;
+	width: 100%;
 	background-color: grey;
-	color: yellow;
 	o-transition: all .3s linear;
 	-ms-transition: all .3s linear;
 	-moz-transition: all .3s linear;
 	-webkit-transition: all .3s linear;
 	transition: all .3s linear;
+	position: fixed;
+	top: 0px;
 }
 .banner-hidden{
-	height: 75px;
+	height: 75px !important;
 }
 #content{
-	height: 700px;
+	position: relative;
+	margin-top: 100px;
+	height: 800px;
 	background: url(../img/8_Bit_Mario_big.png);
 	background-repeat: no-repeat;
 	background-position:50% 50%;
