@@ -1,0 +1,37 @@
+<!doctype html>
+<head>
+  <meta charset="utf-8">
+  <title>Medieninformatik 06.01.2015 -- Jquery UI</title>
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+  <link rel="stylesheet" type="text/css" href="styles/main.css">
+</head>
+<body>
+  <header>
+    <div id="banner">
+
+    </div>
+  </header>
+  <div id="content">
+
+  </div>
+  <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+  <script>
+  $(document).ready(function() {
+    $(window).scroll(function () {
+      var tempScrollTop = $(window).scrollTop();
+      console.log(tempScrollTop);
+      if (tempScrollTop > 30){
+        $("#banner").animate({
+            "height": 100
+        }, 50 );  
+      }else if (tempScrollTop < 30){
+         $("#banner").animate({
+            "height": 300
+        }, 50 );  
+      }
+    });
+  });
+  </script>
+</body>
+</html>

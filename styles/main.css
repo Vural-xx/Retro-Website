@@ -1,0 +1,13 @@
+*{
+	margin:0;
+	padding: 0;
+}
+
+#banner{
+	height: 300px;
+	background-color: grey;
+	color: yellow;
+}
+#content{
+	height: 700px;
+}
