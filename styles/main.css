@@ -3,7 +3,9 @@
 	padding: 0;
 }
 
-body {
+html,body {
+	width: 100%;
+	height: 100%;
     cursor: url(Cursor_20x32.gif), auto;
 }
 
@@ -18,6 +20,7 @@ body {
 	transition: all .3s linear;
 	position: fixed;
 	top: 0px;
+	z-index: 100;
 }
 .banner-hidden{
 	height: 75px !important;
@@ -34,6 +37,17 @@ body {
 footer{
 	height: 50px;
 	background-color: grey;
+}
+
+#slider{
+	margin: 100px auto;
+	width: 800px;
+}
+
+.box{
+	height: 400px;
+	width: 100%;
+	background-color: red;
 }
 
 
