@@ -67,7 +67,7 @@ nav {
 }
 
 #slider{
-	margin: 100px auto;
+	margin: 130px auto 30px auto;
 	width: 800px;
 	position: relative;
 }
@@ -102,12 +102,15 @@ nav {
 	background: url(../img/monkey_island_slider.jpg);
 	background-repeat: no-repeat;
 	background-position:50% 50%;
+}
+
+.sam_and_max{
+	background: url(../img/sam_and_max.jpg);
+	background-repeat: no-repeat;
+	background-position:50% 50%;
 } 
 
 #main{
-	position: relative;
-	margin-top: 100px;
-	height: 800px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -115,6 +118,8 @@ nav {
 
 #content {
     width: 61%;
+    background-color: white;
+    margin-bottom: 50px;
 }
 
 .bewertung{
