@@ -1,3 +1,5 @@
+@font-face { font-family:MonkeyIsland-1990; src:url(../fonts/MonkeyIsland-1990.ttf); font-size:10pt,12pt,14pt; }
+
 *{
 	margin:0;
 	padding: 0;
@@ -6,7 +8,8 @@
 html,body {
 	width: 100%;
 	height: 100%;
-        cursor: url(../img/Cursor_20x32.gif), auto;
+    cursor: url(../img/Cursor_20x32.gif), auto;
+    font-family: MonkeyIsland-1990;
 }
 
 #banner{
@@ -58,6 +61,44 @@ nav {
     text-decoration: none;
 }
 
+#slider{
+	margin: 100px auto;
+	width: 800px;
+	position: relative;
+}
+
+.box{
+	height: 400px;
+	width: 100%;
+}
+
+.box img{
+	margin: 0 auto;
+}
+
+.box h3{
+	/*color: #642665;*/
+	/*color: #ad45a8; */
+	color: white;
+	position: absolute;
+	bottom: 100px;
+	left: 100px;
+}
+
+.box a{
+	color: white;
+	position: absolute;
+	bottom: 30px;
+	left: 400px;
+
+}
+
+.box:nth-child(1){
+	background: url(../img/monkey_island_slider.jpg);
+	background-repeat: no-repeat;
+	background-position:50% 50%;
+} 
+
 #main{
 	position: relative;
 	margin-top: 100px;
@@ -65,30 +106,43 @@ nav {
 	background: url(../img/8_Bit_Mario_big.png);
 	background-repeat: no-repeat;
 	background-position:50% 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #content {
     width: 61%;
 }
 
+.bewertung{
+	height: 50px;
+	background: url(../img/stern_klein.png);
+}
+
+.bewertung.einStern{
+	width: 50px;
+}
+
+.bewertung.zweiSterne{
+	width: 100px;
+}
+
+.bewertung.dreiSterne{
+	width: 150px;
+}
+
+.bewertung.vierSterne{
+	width: 200px;
+}
+
+.bewertung.fuenfSterne{
+	width: 250px;
+}
 
 footer{
 	height: 50px;
 	background-color: grey;
-}
-
-#slider{
-	margin: 100px auto;
-	width: 800px;
-}
-
-.box{
-	height: 400px;
-	width: 100%;
-	background-color: red;
 }
 
 
