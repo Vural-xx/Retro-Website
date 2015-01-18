@@ -12,9 +12,7 @@ html,body {
     font-family: MonkeyIsland-1990;
 }
 body{
-	background: url(../img/8_Bit_Mario_big.png);
-/*	background-repeat: no-repeat;*/
-	background-position:50% 50%;
+	background: url(../img/zelda_wallpaper.png);
 }
 
 #banner{
@@ -120,6 +118,11 @@ nav {
     width: 61%;
     background-color: white;
     margin-bottom: 50px;
+    margin-top: 130px;
+}
+
+.withSlider{
+	margin-top: 0px !important;
 }
 
 .bewertung{
