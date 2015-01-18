@@ -116,13 +116,31 @@ nav {
 
 #content {
     width: 61%;
-    background-color: white;
+  
     margin-bottom: 50px;
     margin-top: 130px;
 }
 
 .withSlider{
 	margin-top: 0px !important;
+	background-color:white; 
+}
+
+.teaser{
+	position: relative;
+	border-radius: 8px;
+	padding: 20px;
+	background-color:white; 
+}
+.teaser img{
+	width: 40px;
+	height: 40px;
+	overflow: hidden;
+	border-radius: 50px;
+	border: 1px solid black;
+	position: absolute;
+	left: -15px;
+	top:-15px;
 }
 
 .bewertung{
