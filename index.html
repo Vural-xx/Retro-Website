@@ -3,8 +3,8 @@
   <meta charset="utf-8">
   <title>Medieninformatik 06.01.2015 -- Jquery UI</title>
   <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
-  <link rel="stylesheet" type="text/css" href="styles/main.css">
   <link href="styles/jquery.bxslider.css" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="styles/main.css">
 </head>
 <body>
   <header>
@@ -61,7 +61,10 @@
   <script src="js/jquery.bxslider.min.js"></script>
   <script>
   $(document).ready(function() {
-    $('.bxslider').bxSlider();
+    $('.bxslider').bxSlider({
+      auto: true,
+      autoControls: true
+    });
     $(window).scroll(function () {
       var tempScrollTop = $(window).scrollTop();
       console.log(tempScrollTop);

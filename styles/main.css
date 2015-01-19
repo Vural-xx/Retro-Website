@@ -9,10 +9,19 @@ html,body {
 	width: 100%;
 	height: 100%;
     cursor: url(../img/Cursor_20x32.gif), auto;
-    font-family: MonkeyIsland-1990;
+ 	font-family: MonkeyIsland-1990; 
 }
+
 body{
 	background: url(../img/zelda_wallpaper.png);
+}
+
+header{
+
+}
+
+h1,h2,h2,h4{
+/*	font-family: MonkeyIsland-1990; */
 }
 
 #banner{
@@ -46,6 +55,7 @@ nav {
     width: 61%;
     bottom: 0px;
     position: absolute;
+    z-index: 10000
     
 }
 
@@ -96,6 +106,14 @@ nav {
 
 }
 
+.bx-prev{
+	color: black;
+	content: "<";
+}
+
+.bx-wrapper .bx-controls-direction a{
+	z-index: 0;
+}
 .monkey_island{
 	background: url(../img/monkey_island_slider.jpg);
 	background-repeat: no-repeat;
@@ -116,14 +134,16 @@ nav {
 
 #content {
     width: 61%;
-  
     margin-bottom: 50px;
     margin-top: 130px;
 }
 
 .withSlider{
 	margin-top: 0px !important;
-	background-color:white; 
+	background-color:white;
+	opacity: 0.7;
+	padding: 8px;
+	border-radius: 8px; 
 }
 
 .teaser{
