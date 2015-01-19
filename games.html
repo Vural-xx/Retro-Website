@@ -38,8 +38,34 @@
   <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
   <script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
   <script src="js/jquery.bxslider.min.js"></script>
+  <script src="js/jquery.simplemodal-1.4.4.js"></script>
+  
   <script>
   $(document).ready(function() {
+    // ModalPanel
+    $(".teaser").click(function() {
+      $.modal('<div class="screenshot-panel">'+
+          '<h1>Impressum</h1><br>'+
+          '<h2>i2dm consulting & development GmbH</h2><br>'+
+          'Gesch&auml;ftsf&uuml;hrender Gesellschafter:<br>'+
+          'Dr. Volker Redder<br>'+
+          'Tiefer 2 <br>'+
+          '28195 Bremen <br>'+
+          '<br>'+
+          'Tel: +49-(0)421 - 24 34 9-10 <br>'+
+          'Fax: +49-(0)421 - 24 34 9-11 <br>'+
+          'E-Mail: <a href="mailto:info@i2dm.de">info@i2dm.de</a><br>'+
+          '<br>'+
+          'USt-ID: DE 207968614 <br>'+
+          'Handelsregister: AG Bremen HRB 19289'+
+        '</div>'
+      ) 
+  });
+
+
+
+
+
     $('.bxslider').bxSlider();
     $(window).scroll(function () {
       var tempScrollTop = $(window).scrollTop();

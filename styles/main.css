@@ -143,6 +143,26 @@ nav {
 	top:-15px;
 }
 
+.screenshot-panel{
+	background-color: white;
+}
+
+#simplemodal-container a.modalCloseImg{
+	background:url(../img/x.png) no-repeat; /* adjust url as required */
+	width:30px;
+	height:30px;
+	display:inline;
+	z-index:3200;
+	position:absolute;
+	top:-15px;
+	right:-18px;
+	cursor:pointer;
+}
+
+.simplemodal-overlay {
+    background-color: #000;
+}
+
 .bewertung{
 	height: 50px;
 	background: url(../img/stern_klein.png);
