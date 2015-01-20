@@ -10,6 +10,7 @@ html,body {
 	height: 100%;
     cursor: url(../img/Cursor_20x32.gif), auto;
  	font-family: MonkeyIsland-1990; 
+ 	font-size: 12px;
 }
 
 body{
@@ -225,17 +226,61 @@ nav ul li:hover > a {
 	padding: 20px;
 	background-color:white; 
 	margin-bottom: 20px;
+	border: 3px solid #8CB302;
+	box-shadow: 10px 10px 10px grey;
+	position: relative;
 }
 
-.teaser img{
+.teaser .teaser-image{
 	width: 40px;
 	height: 40px;
 	overflow: hidden;
 	border-radius: 50px;
-	border: 1px solid black;
+	border: 2px solid #8CB302;
 	position: absolute;
-	left: -15px;
-	top:-15px;
+	left: -20px;
+	top:-20px;
+	z-index: 2;
+}
+
+.teaser .teaser-text{
+	display: inline-block; 
+	width: 65%;
+}
+.teaser .side-color{
+	height: 100%;
+	display: inline-block;
+	width: 30%;
+	background-color: #8CB302;
+	position: relative;
+	z-index: 2;
+	left: 4%;
+}
+
+.teaser .sider{
+	width: 30%;
+	height: 100%;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	z-index: 1;
+	background-color: #8CB302;
+
+}
+
+.teaser span{
+	display: inline;
+}
+
+.teaser h2{
+	color: #8CB302
+}
+
+.teaser .teaser-screenshot{
+	display: inline;
+	float: right;
+	margin-left:8px;
+	cursor: pointer;
 }
 
 .screenshot-panel{
