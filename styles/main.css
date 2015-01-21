@@ -151,7 +151,7 @@ nav ul li:hover > a {
 }
 
 #slider{
-	margin: 130px auto 30px auto;
+	margin: 180px auto 30px auto;
 	width: 800px;
 	position: relative;
 }
@@ -211,7 +211,7 @@ nav ul li:hover > a {
 #content {
     width: 61%;
     margin-bottom: 50px;
-    margin-top: 130px;
+    margin-top: 180px;
 }
 
 .withSlider{
