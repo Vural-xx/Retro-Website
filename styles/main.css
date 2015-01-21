@@ -30,7 +30,13 @@ h1,h2,h2,h4{
 #banner{
 	height: 150px;
 	width: 100%;
-	background: url(../img/banner.jpg);
+	background: url(../img/banner1_03.jpg), url(../img/unnamed.jpg);
+	
+	background-repeat: no-repeat, repeat;
+	background-position: 27% 50%;
+	/*
+	
+	background-size: contain;*/
 	o-transition: all .3s linear;
 	-ms-transition: all .3s linear;
 	-moz-transition: all .3s linear;
