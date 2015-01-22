@@ -75,7 +75,6 @@ nav ul {
     align-self: flex-end;
     padding: 0px;
     margin: 0px;
-
     box-shadow: 2px 2px 2px #dfdfdf;
     -moz-box-shadow: 2px 2px 2px #dfdfdf;
     -webkit-box-shadow: 2px 2px 2px #dfdfdf;
@@ -167,7 +166,26 @@ nav ul li:hover > a {
 	position: relative;
 }
 
+.banderole{
+	height: 50px;
+	color: white;
+	transform:rotate(-30deg);;
+	-moz-transform: rotate(-30deg);
+	-ms-transform: rotate(-30deg);
+	-o-transform: rotate(-30deg);
+	-webkit-transform: rotate(-30deg);
+	position: relative;
+	left: -230px;
+	padding-left: 300px;
+	font-size: 16px;
+}
+
+.banderole.games{
+	background-color: #8CB302;
+}
+
 .box{
+	overflow: hidden;
 	height: 400px;
 	width: 100%;
 }
