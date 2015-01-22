@@ -16,8 +16,9 @@ html,body {
 body{
 	background: url(../img/zelda_wallpaper.png);
 }
-
-
+body a, html a {
+    cursor: url(../img/pointer.png), auto;
+}
 
 header{
 
