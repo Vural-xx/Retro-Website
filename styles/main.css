@@ -424,8 +424,9 @@ nav ul li:hover > a {
 
 footer{
 	height: 50px;
-	background-color: grey;
+	background-color: rgb(72, 72, 72);
         width: 100%;
+        font-size: 8px;
 }
 
 footer ul {
@@ -439,6 +440,7 @@ footer ul li{
     padding: 14px 14px 14px 14px;
     display: flex;
     align-self: center;
+    color: rgb(145, 145, 145);
 }
 
 footer ul li a, footer ul a {
@@ -448,15 +450,38 @@ footer ul li a, footer ul a {
     align-self: center;
 }
 
+footer ul li img {
+    margin-right: 5px;
+}
+
 .footer_text {
     display: flex;
     align-self: center;
 }
 
+.kontakt_logo {
+    height: 10px;
+}
+
 /*
-#impressum_logo {
-    height: 32px;
-    width: 32px;
-    background-image: url(./img/impressum2.png);
+.bc_trenner {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    // border: 1px solid grey;
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    position: absolute;
+    left: -13px;
+}
+
+#bc_box {
+    // overflow: hidden;
+    height: 50px;
+    width: 50px;
+    position: relative;
+    overflow: hidden;
 }
 */
+
