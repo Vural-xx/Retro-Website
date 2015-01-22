@@ -463,6 +463,33 @@ footer ul li img {
     height: 10px;
 }
 
+.selected_home {
+    background-color: #E6DD00;
+
+}
+
+.selected_home a {
+    color: white;
+}
+
+.selected_game {
+    background-color: #8CB302;
+
+}
+
+.selected_game a {
+    color: white;
+}
+
+.selected_links {
+    background-color: #008C74;
+
+}
+
+.selected_links a {
+    color: white;
+}
+
 /*
 .bc_trenner {
     width: 50px;
