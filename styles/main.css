@@ -27,12 +27,19 @@ h1,h2,h2,h4{
 /*	font-family: MonkeyIsland-1990; */
 }
 
+#abdecker{
+	height: 50px;
+	position: fixed;
+	top: 0;
+	background-color: #484848;
+	width: 100%;
+	z-index: 99;
+}
 #banner{
 	height: 150px;
 	width: 100%;
-	background: url(../img/banner1_03.jpg), url(../img/unnamed.jpg);
-	
-	background-repeat: no-repeat, repeat;
+	background: url(../img/banner1_03.jpg), url(../img/unnamed.jpg);	
+	background-repeat: no-repeat, repeat-x;
 	background-position: 27% 50%;
 	/*
 	
@@ -47,7 +54,12 @@ h1,h2,h2,h4{
 	z-index: 100;
 }
 .banner-hidden{
+	top: 0px;
 	height: 75px !important;
+	background: url(../img/zusammengeklappt.jpg), url(../img/zusammengeklapptleer.jpg) !important;
+	background-position: 28% 50% !important;
+	background-repeat: no-repeat, repeat-x !important;
+
 }
 
 nav {
