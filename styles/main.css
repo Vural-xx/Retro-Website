@@ -88,13 +88,6 @@ nav ul li {
     border-right: 1px solid #dfdfdf;
 }
 
-nav ul li a {
-    text-decoration: none;
-    display: block;
-    color: #333;
-    padding: 14px 34px 14px 34px;
-}
-
 nav ul li:hover > ul {
     visibility: visible;
 }
@@ -420,4 +413,38 @@ nav ul li:hover > a {
 footer{
 	height: 50px;
 	background-color: grey;
+        width: 100%;
 }
+
+footer ul {
+    display: flex;
+    justify-content: center;
+}
+
+footer ul li{
+    list-style: none;
+    color: #333;
+    padding: 14px 14px 14px 14px;
+    display: flex;
+    align-self: center;
+}
+
+footer ul li a, footer ul a {
+    text-decoration: none;
+    color: #333;
+    display: flex;
+    align-self: center;
+}
+
+.footer_text {
+    display: flex;
+    align-self: center;
+}
+
+/*
+#impressum_logo {
+    height: 32px;
+    width: 32px;
+    background-image: url(./img/impressum2.png);
+}
+*/
