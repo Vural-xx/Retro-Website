@@ -181,8 +181,17 @@ nav ul li:hover > a {
 	font-size: 16px;
 }
 
+.banderole span{
+	position: relative;
+	top: 15px;
+}
+
 .banderole.games{
 	background-color: #8CB302;
+}
+
+.banderole.links{
+	background-color: #008C74;
 }
 
 .box{
