@@ -1,0 +1,110 @@
+<!doctype html>
+<head>
+  <meta charset="utf-8">
+  <title>Medieninformatik 06.01.2015 -- Jquery UI</title>
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+  <link rel="stylesheet" type="text/css" href="styles/main.css">
+  <link href="styles/jquery.bxslider.css" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <div id="abdecker"/>
+    <div id="banner">
+        <nav>
+            <ul>
+                <li class = "cat1">
+                    <a href="#">Home</a>
+                </li>
+                <li class = "cat2 selected_game">
+                    <a href="#">Games</a>
+                    <ul>
+                        <li><a href="#">Top 10</a></li>
+                        <li><a href="games.html">Tests</a></li>
+                    </ul>
+                </li>
+                <li class = "cat3">
+                     <a href="#">Links</a>
+                     <ul>
+                         <li><a href="#">Seiten</a></li>
+                         <li><a href="#">Emulatoren</a></li>                         
+                     </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+  </header>
+
+  <div id="main">
+    <div id="content">
+      <div class="teaser">
+        <img src="img/guybrush.jpg" class="teaser-image">
+        <div class="teaser-text">
+          <h2>The Secret of Monkey Island</h2>
+          <br/>
+          <br/>
+          <span>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</span><a href="monkey_island_test.html">Weiterlesen >></a>
+        </div>
+
+        <div class="side-color">
+          <img src="img/monkey_island_teaser.jpg" id="monkey_island_teaser" class="teaser-screenshot" width="224">
+        </div>
+         <div class="sider"></div>
+      </div>
+
+       <div class="teaser">
+        <img src="img/guybrush.jpg" class="teaser-image">
+        <div class="teaser-text">
+          <h2>Sam and Max - Hit The Road</h3>
+          <br/>
+          <br/>
+          <span>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.  
+          </span><a href="sam_and_max_test.html">Weiterlesen >></a>
+        </div>
+        <div class="side-color">
+          <img src="img/Sam-and-Max_teaser.jpg" id="monkey_island_teaser" class="teaser-screenshot" width="224">
+        </div>
+        <div class="sider"></div>
+      </div>
+    </div>
+  </div>
+  <footer>
+
+  </footer>
+  <!-- Einbinden der Skripte -->
+  <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+  <script src="js/jquery.bxslider.min.js"></script>
+  <script src="js/jquery.simplemodal-1.4.4.js"></script>
+  
+  <script>
+  $(document).ready(function() {
+    // ModalPanel
+    $("#monkey_island_teaser").click(function() {
+      $.modal(
+        '<ul class="bxslider">'
+        +'<li>'
+         + '<img src="img/monkey_island_teaser.jpg" width="500px">'
+        +'</div>'
+      +'</li>'
+      +'<li>'
+       + '<img src="img/monkey_island_teaser.jpg" width="500px">'
+      + '</li>'
+    + '</ul>'
+      )
+      $('.bxslider').bxSlider(); 
+    });
+
+    $('.bxslider').bxSlider();
+    $(window).scroll(function () {
+      var tempScrollTop = $(window).scrollTop();
+      console.log(tempScrollTop);
+      if (tempScrollTop > 100){
+        $("#banner").addClass("banner-hidden"); 
+      }else if (tempScrollTop < 30){
+         $("#banner").removeClass("banner-hidden"); 
+      }
+    });
+  });
+  </script>
+</body>
+</html>
