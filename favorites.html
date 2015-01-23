@@ -1,0 +1,97 @@
+<!doctype html>
+<head>
+  <meta charset="utf-8">
+  <title>Medieninformatik 06.01.2015 -- Jquery UI</title>
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+  <link href="styles/jquery.bxslider.css" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="styles/main.css">
+</head>
+<body>
+  <header>
+    <div id="abdecker"/>
+    <div id="banner">
+        <nav>
+            <ul>
+                <li class = "cat1">
+                    <a href="index.html">Home</a>
+                </li>
+                <li class = "cat2">
+                    <a href="games.html">Games</a>
+                    <ul>
+                        <li><a href="#">Top 10</a></li>
+                        <li><a href="games.html">Tests</a></li>
+                    </ul>
+                </li>
+                <li class = "cat3 selected_links">
+                     <a href="#">Links</a>
+                     <ul>
+                         <li><a href="favorites.html">Favoriten</a></li>
+                         <li><a href="#">Emulatoren</a></li>                         
+                     </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+  </header>
+<div id="main">
+    <div id="content">
+
+       <div class="fav">
+        <img src="img/guybrush.jpg" class="fav-image">
+        <h2>Seiten der Begierde</h3>
+        <br/>
+        <br/>
+        <span>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+        </span>
+        <div class ="trenner fav_trenner"></div>
+        <span>   
+
+Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.   
+
+Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.   
+
+Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.   
+
+Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.   
+
+At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, At accusam aliquyam diam diam dolore dolores duo eirmod eos erat, et nonumy sed tempor et et invidunt justo labore Stet clita ea et gubergren, kasd magna no rebum. sanctus sea sed takimata ut vero voluptua. est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur</span>
+      </div>
+
+
+    </div>
+  </div>
+</div>
+
+ <footer>
+    <ul>
+        <li>&#124;</li>
+        <a href="kontakt.html"><li><img class="kontakt_logo" src="./img/kontakt.png"></div> <div class="footer_text"> Kontakt </div></li></a>
+        <li>&#124;</li>
+        <a href="impressum.html"><li><img class="kontakt_logo" src="./img/impressum.png"><div class="footer_text"> Impressum </div></li></a>
+        <li>&#124;</li>        
+    </ul>
+  </footer>
+    
+  <!-- Einbinden der Skripte -->
+  <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+  <script src="js/jquery.bxslider.min.js"></script>
+  <script>
+  $(document).ready(function() {
+    $('.bxslider').bxSlider({
+      auto: true,
+      autoControls: true
+    });
+    $(window).scroll(function () {
+      var tempScrollTop = $(window).scrollTop();
+      console.log(tempScrollTop);
+      if (tempScrollTop > 100){
+        $("#banner").addClass("banner-hidden"); 
+      }else if (tempScrollTop < 30){
+         $("#banner").removeClass("banner-hidden"); 
+      }
+    });
+  });
+  </script>
+</body>
+</html>
