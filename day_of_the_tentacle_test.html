@@ -1,0 +1,118 @@
+<!doctype html>
+<head>
+  <meta charset="utf-8">
+  <title>Medieninformatik 06.01.2015 -- Jquery UI</title>
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+  <link rel="stylesheet" type="text/css" href="styles/main.css">
+  <link href="styles/jquery.bxslider.css" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <div id="abdecker"/>
+    <div id="banner">
+        <nav>
+            <ul>
+                <li class = "cat1">
+                    <a href="#">Home</a>
+                </li>
+                <li class = "cat2 selected_game">
+                    <a href="#">Games</a>
+                    <ul>
+                        <li><a href="#">Top 10</a></li>
+                        <li><a href="games.html">Tests</a></li>
+                    </ul>
+                </li>
+                <li class = "cat3">
+                     <a href="#">Links</a>
+                     <ul>
+                         <li><a href="#">Seiten</a></li>
+                         <li><a href="#">Emulatoren</a></li>                         
+                     </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+  </header>
+
+  <div id="main">
+    <div id="content">
+      <div class="test">
+        <div class="test-text">
+          <h2>Maniac Mansion - Day Of The Tentacle</h2>
+          <br/>
+          <br/>
+          <span>Angelockt durch ein Telegramm startet Eierkopf Bernard mit seinen Mitbewohnern eine Befreiungsmaßnahme für die beiden Tentakel, die der psychopathische Dr. Fred in seinem Keller gefangen hält. Das Gelingen der Nacht-und-Nebel-Aktion soll fatale Folgen für die Zukunft des Planeten haben: </br></br>
+          Purpur-Tentakel entpuppt sich als gefährlicher Mutant, der allen Warnungen zum Trotz das verseuchte Abwasser aus Dr. Freds Labor getrunken hat und nun mit Hilfe der Arme, die ihm danach gewachsen sind, die Weltherrschaft erringen möchte. Die beiden Tentakel waren also aus gutem Grund gefesselt!</br></br>Um das Missgeschick ungeschehen zu machen, müssen Bernard, Hoagie und Larverne mit Dr. Fred kooperieren. Er schickt er sie per Zeitmaschine Richtung Vergangenheit, um die Konterminierung des Abwassers rechtzeitig zu verhindern. Aufgrund der schwachen Materialbeschaffenheit seiner Erfindung (imitierter Diamant) schlägt die Zeitreise jedoch fehl und die drei Freunde werden unwillkürlich in der Geschichte verteilt.<br/><br/>Der übergewichtige Metal-Schlagzeuger Hoagie findet sich zweihundert Jahre in der Vergangenheit bei den Gründervätern der USA wieder, die gerade an einem Entwurf für ihre Verfassung werkeln. Um die Zeitmaschine für seine Rückkehr in die Gegenwart instand zu setzen, muss er die Zutaten für eine Superbatterie finden. Medizinstudentin Laverne wurde derweil zweihundert Jahre in der Zukunft deponiert und ist dort in Gefangenschaft geraten. Das futuristische Haus der Edisons ist zugleich das Regierungsgebäude der Tentakelweltregierung. Bernard hat Glück gehabt: Er wurde in die Gegenwart zurückversetzt und muss nun jediglich zwei Millionen Dollar für den Kauf eines richtigen Diamanten auftreiben.<br></br>Mit der kunterbunten Comic-Grafik, dem mehrspurigen Gameplay, dem abgedrehten Humor, den schrägen, aber niemals unlogischen Rätseln und schließlich der 1993 erstmals angewandten Sprachausgabe weiß der Maniac-Mansion-Nachfolger in jeder Hinsicht zu überzeugen. Day of the Tentacle stellt gemeinsam mit Sam & Max den Höhepunkt der klassischen Phase des Grafikadventures dar. Zugegeben, man hört der Sprachausgabe an, dass sie noch in den Kinderschuhen steckt. Aus der Gegenperspektive wird hier der Grundstein für die Entwicklung zu dem gelegt, was bei modernen Grafikadventures nicht mehr wegzudenken wäre. Als besonderes Bonbon ist im Spiel der erste Teil von Maniac Mansion enthalten: Einfach mal Eds Computer benutzen.
+          </span>
+        </div>
+
+       
+        <div class="sider">
+          <div class="side-color">
+           <img src="img/dott-1.jpg" id="monkey_island_teaser" class="teaser-screenshot" width="224">
+           <img src="img/dott-2.jpg" id="monkey_island_teaser" class="teaser-screenshot" width="224">
+            <img src="img/dott-3.jpg" id="monkey_island_teaser" class="teaser-screenshot" width="224">
+            <span>Screenshots(10)</span>
+            <div class="fakten">
+              <h3>Fakten & Co.</h3>  
+              <ul>
+                <li>Erschienen: 1993</li>
+                <li>Sprache: deutsch (mit Sprachausgabe)</li>
+                <li>Altersempfehlung: ab 12</li>
+                <li>
+                  <u>Systemanforderungen</u>
+                  <br></br>PC 286
+                  <br></br>4 MB RAM
+                  <br></br>256 VGA
+                  <br></br><u>Empfohlen:</u>
+                  <br></br>PC 386
+                  <br></br>33 MHZ
+                  <br></br>Soundkarte
+                </li>
+              </ul>
+            </div>
+          </div>
+         </div>
+         <div class="test_bewertung">
+            Bewertung
+            <br>
+            <br>
+            5/5 Sternen
+            <br/>
+            <div class="bewertung fuenfSterne"></div>
+         </div>
+      </div>
+
+    </div>
+  </div>
+  <footer>
+
+  </footer>
+  <!-- Einbinden der Skripte -->
+  <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+  <script src="js/jquery.bxslider.min.js"></script>
+  <script src="js/jquery.simplemodal-1.4.4.js"></script>
+  
+  <script>
+  $(document).ready(function() {
+    // ModalPanel
+    $("#monkey_island_teaser").click(function() {
+      $.modal('< <img src="img/monkey_island_teaser.jpg" id="monkey_island_teaser"'+ 'class="teaser-screenshot" width="600px">'
+      ) 
+    });
+
+    $('.bxslider').bxSlider();
+    $(window).scroll(function () {
+      var tempScrollTop = $(window).scrollTop();
+      console.log(tempScrollTop);
+      if (tempScrollTop > 100){
+        $("#banner").addClass("banner-hidden"); 
+      }else if (tempScrollTop < 30){
+         $("#banner").removeClass("banner-hidden"); 
+      }
+    });
+  });
+  </script>
+</body>
+</html>

@@ -290,6 +290,7 @@ nav ul li:hover > a {
 }
 
 .teaser .side-color{
+	color: white;
 	height: 100%;
 	display: inline-block;
 	width: 30%;
@@ -335,6 +336,10 @@ nav ul li:hover > a {
 }
 .trenner.fav_trenner {
 	background-color:#008C74; 
+}
+.trenner.white_trenner {
+	margin-bottom: 30px;
+	background-color:white; 
 }
 
 
@@ -441,11 +446,22 @@ nav ul li:hover > a {
 .test .side-color{
 	height: 100%;
 	display: inline-block;
-	width: 30%;
+	width: 90%;
 	background-color: #8CB302;
 	position: relative;
 	z-index: 2;
 	left: 4%;
+}
+
+.test .side-color .fakten{
+	margin-top: 20px;
+	color: white;
+	width: 100%;
+}
+
+.test .side-color .fakten li{
+	margin-top: 10px;
+	margin-left: 15px;
 }
 
 .test .sider{
