@@ -412,6 +412,11 @@ nav ul li:hover > a {
 	top:-20px;
 	z-index: 2;
 }
+.fav img {
+	height: 100px;
+	width: 372px;
+
+}
 
 .fav .fav-text{
 	display: inline-block; 
