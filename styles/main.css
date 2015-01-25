@@ -471,7 +471,51 @@ nav ul li:hover > a {
 	margin-bottom: 30px;
 	background-color:white; 
 }
+.trenner.games_trenner {
+	background-color:#8CB302;
+	clear: both; 
+}
 
+
+.top10{
+	position: relative;
+	border-radius: 8px;
+	padding: 20px;
+	background-color:white; 
+	margin-bottom: 20px;
+	border: 3px solid #8CB302;
+	box-shadow: 10px 10px 10px grey;
+	position: relative;
+	height: auto;
+}
+
+.top10 h1, .top10 h2, .top10 h3{
+	color: #8CB302;
+	margin-bottom: 18px;
+}
+
+.top10 img, .top10 p{
+	float: left;
+}
+.top10 p{
+	width: 65%;
+}
+.top10 img{
+	width: 220px ;
+	margin-bottom: 20px;
+	margin-left: 8px;
+	border: 2px solid #8CB302;
+}
+
+.top10 ul{
+	clear: both;
+	color: #8CB302;
+}
+
+.top10 ul li{
+	list-style-type: none;
+	margin-bottom: 8px;
+}
 
 .fav{
 	position: relative;
@@ -630,6 +674,12 @@ nav ul li:hover > a {
 	display: inline;
 	cursor: pointer;
 	margin: 5px auto;
+}
+
+.test .charaktere{
+	margin: 20px 0;
+	border: 1px solid red;
+	width: 65%;
 }
 
 .test .test_bewertung{
