@@ -1,0 +1,87 @@
+<!doctype html>
+<head>
+  <meta charset="utf-8">
+  <title>Retro Planet - Kontakt</title>
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+  <link href="styles/jquery.bxslider.css" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="styles/main.css">
+</head>
+<body>
+  <header>
+    <div id="abdecker"/>
+    <div id="banner">
+        <nav>
+            <ul>
+                <li class = "cat1 selected_home">
+                    <a href="index.html">Home</a>
+                </li>
+                <li class = "cat2">
+                    <a href="#">Games</a>
+                    <ul>
+                        <li><a href="#">Top 10</a></li>
+                        <li><a href="games.html">Tests</a></li>
+                    </ul>
+                </li>
+                <li class = "cat3">
+                     <a href="#">Links</a>
+                     <ul>
+                         <li><a href="favorites.html">Favoriten</a></li>
+                         <li><a href="#">Emulatoren</a></li>                         
+                     </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+  </header>
+  
+  <div id="main" >
+    <div id="content" class="content_class footer_content">
+        
+        <h3>Kontakt</h3>
+        <br><br>
+        <strong>Retro GmbH</strong> <br>
+    <br>
+    Retro Straße 1337 <br>
+    1337 Retrostadt <br>
+    <br>
+    E-Mail:   <strong>retro@planet.de</strong> <br>
+    Tel:       <strong>+49 (0) 123 4567 8910</strong> <br>
+    Fax:      <strong>+49 (0) 123 4567 8911</strong> <br>
+    </div>
+  </div>
+    
+    <!-- <div id="bc_box"><div class="bc_trenner"></div></div> -->
+
+  <footer>
+    <ul>
+        <li>&#124;</li>
+        <a href="kontakt.html"><li><img class="kontakt_logo" src="./img/kontakt.png"></div> <div class="footer_text"> Kontakt </div></li></a>
+        <li>&#124;</li>
+        <a href="impressum.html"><li><img class="kontakt_logo" src="./img/impressum.png"><div class="footer_text"> Impressum </div></li></a>
+        <li>&#124;</li>        
+    </ul>
+  </footer>
+    
+  <!-- Einbinden der Skripte -->
+  <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+  <script src="js/jquery.bxslider.min.js"></script>
+  <script>
+  $(document).ready(function() {
+    $('.bxslider').bxSlider({
+      auto: true,
+      autoControls: true
+    });
+    $(window).scroll(function () {
+      var tempScrollTop = $(window).scrollTop();
+      console.log(tempScrollTop);
+      if (tempScrollTop > 100){
+        $("#banner").addClass("banner-hidden"); 
+      }else if (tempScrollTop < 30){
+         $("#banner").removeClass("banner-hidden"); 
+      }
+    });
+  });
+  </script>
+</body>
+</html>
