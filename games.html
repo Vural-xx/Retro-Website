@@ -56,10 +56,12 @@
           <span>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. </span><a href="monkey_island_test.html">Weiterlesen >></a>
         </div>
 
-        <div class="side-color">
-          <img src="img/monkey_island_teaser.jpg" id="monkey_island_teaser" class="teaser-screenshot" width="224">
-        </div>
-         <div class="sider"></div>
+        
+         <div class="sider">
+          <div class="side-color">
+            <img src="img/monkey_island_teaser.jpg" id="monkey_island_teaser" class="teaser-screenshot" width="224">
+          </div>
+         </div>
       </div>
 
       <div class="teaser">
@@ -71,10 +73,11 @@
           <span>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.  
           </span><a href="sam_and_max_test.html">Weiterlesen >></a>
         </div>
-        <div class="side-color">
-          <img src="img/Sam-and-Max_teaser.jpg" id="monkey_island_teaser" class="teaser-screenshot" width="224">
+        <div class="sider">
+          <div class="side-color">
+            <img src="img/Sam-and-Max_teaser.jpg" id="sam_teaser" class="teaser-screenshot" width="224">
+          </div>
         </div>
-        <div class="sider"></div>
       </div>
     
      <div class="teaser">
@@ -86,10 +89,11 @@
           <span>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.  
           </span><a href="day_of_the_tentacle_test.html">Weiterlesen >></a>
         </div>
-        <div class="side-color">
-          <img src="img/Sam-and-Max_teaser.jpg" id="monkey_island_teaser" class="teaser-screenshot" width="224">
+        <div class="sider">
+          <div class="side-color">
+            <img src="img/dott-1.jpg" id="dott_teaser" class="teaser-screenshot" width="224">
+          </div>
         </div>
-        <div class="sider"></div>
       </div>
     </div>
 
@@ -114,6 +118,19 @@
   $(document).ready(function() {
     // ModalPanel
     $("#monkey_island_teaser").click(function() {
+      $.modal('< <img src="img/monkey_island_teaser.jpg" id="monkey_island_teaser"'+ 'class="teaser-screenshot" width="600px">'
+      ) 
+    });
+    $("#sam_teaser").click(function() {
+      $.modal('<img src="img/Sam-and-Max_teaser.jpg" id="monkey_island_teaser"'+ 'class="teaser-screenshot" width="600px">'
+      ) 
+    });
+    $("#dott_teaser").click(function() {
+      $.modal('<img src="img/dott-1.jpg" id="monkey_island_teaser"'+ 'class="teaser-screenshot" width="600px">'
+      ) 
+    });
+    /*
+    $("#monkey_island_teaser").click(function() {
       $.modal(
         '<ul class="bxslider">'
         +'<li>'
@@ -126,7 +143,7 @@
     + '</ul>'
       )
       $('.bxslider').bxSlider(); 
-    });
+    });*/
 
     $('.bxslider').bxSlider();
     $(window).scroll(function () {

@@ -459,11 +459,15 @@ nav ul li:hover > a {
 	color: white;
 	height: 100%;
 	display: inline-block;
-	width: 30%;
+	width: 90%;
 	background-color: #8CB302;
 	position: relative;
 	z-index: 2;
 	left: 4%;
+}
+
+.teaser .side-color img{
+	margin: 20px auto;
 }
 
 .teaser .sider{
