@@ -365,10 +365,17 @@ nav ul li:hover > a {
 	border-right: 3px solid #008C74;
 
 
+
+}
+.down #bordleft {
+	border-left: 3px solid #008C74;
 }
 .down a {
 	text-decoration: none;
 	margin-right: 20px;
+}
+.down a.backbutton {
+	
 }
 
 .footer_content {
