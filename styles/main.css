@@ -762,7 +762,41 @@ footer ul li a, footer ul a {
 footer ul li img {
     margin-right: 5px;
 }
+.bottomed{
+	height: 38px;
+	background-color: rgb(72, 72, 72);
+        width: 100%;
+        font-size: 8px;
+}
 
+.bottomed ul {
+    display: flex;
+    justify-content: center;
+}
+
+.bottomed ul li{
+    list-style: none;
+    color: #333;
+    padding: 14px 14px 14px 14px;
+    display: flex;
+    align-self: center;
+    color: rgb(145, 145, 145);
+}
+
+.bottomed ul li a, footer ul a {
+    text-decoration: none;
+    color: #333;
+    display: flex;
+    align-self: center;
+}
+
+.bottomed ul li img {
+    margin-right: 5px;
+}
+.bottomed {
+	position: absolute;
+	bottom: 0px;
+}
 .footer_text {
     display: flex;
     align-self: center;
