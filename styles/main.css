@@ -300,6 +300,16 @@ nav ul li:hover > a {
     background-color: white;
     margin-bottom: 25px;
 }
+
+.artikel_link {
+    position: relative;   
+}
+
+.artikel_link a {
+    position: absolute;
+    right: 15px;
+}
+
 .down{
 	position: relative;
 	border-radius: 8px;
