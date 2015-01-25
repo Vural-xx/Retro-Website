@@ -284,6 +284,89 @@ nav ul li:hover > a {
     background-color: white;
     margin-bottom: 25px;
 }
+.down{
+	position: relative;
+	border-radius: 8px;
+	padding: 20px;
+	background-color:white; 
+	margin-bottom: 20px;
+	border: 3px solid #008C74;
+	box-shadow: 10px 10px 10px grey;
+	position: relative;
+}
+
+.down .down-image{
+	width: 40px;
+	height: 40px;
+	overflow: hidden;
+	border-radius: 50px;
+	border: 2px solid #008C74;
+	position: absolute;
+	left: -20px;
+	top:-20px;
+	z-index: 2;
+}
+.down img {
+	height: 150px;
+	width: 250px;
+
+}
+
+.down .down-text{
+	display: inline-block; 
+	width: 65%;
+}
+
+.down .side-color{
+	height: 100%;
+	display: inline-block;
+	width: 30%;
+	background-color: #8CB302;
+	position: relative;
+	z-index: 2;
+	left: 4%;
+}
+
+.down .sider{
+	width: 30%;
+	height: 100%;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	z-index: 1;
+	background-color: #8CB302;
+
+}
+
+.down span{
+	display: inline;
+}
+
+.down h2{
+	color: #008C74
+}
+
+.down a{
+	color: #008C74;
+}
+
+.down .down-screenshot{
+	display: inline;
+	float: right;
+	margin-left:8px;
+	cursor: pointer;
+}
+.down ul {
+	text-align: center;
+}
+.down li {
+	text-align: center;
+	display: inline-block;
+
+}
+.down a {
+	text-decoration: none;
+}
 
 .footer_content {
     padding: 30px;
