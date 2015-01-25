@@ -639,6 +639,10 @@ footer ul li img {
     height: 10px;
 }
 
+#kontakt_bild img{
+    float: right;
+}
+
 .selected_home {
     background-color: #E6DD00;
 
