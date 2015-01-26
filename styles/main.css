@@ -496,6 +496,8 @@ nav ul li:hover > a {
 }
 
 .teaser .side-color img{
+	position: absolute;
+	top:5%;
 	margin: 20px auto;
 }
 
