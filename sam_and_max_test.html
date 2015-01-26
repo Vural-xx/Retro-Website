@@ -59,9 +59,9 @@
         
         <div class="sider">
           <div class="side-color">
-           <img src="img/Sam-and-Max_teaser.jpg" id="monkey_island_teaser" class="teaser-screenshot" width="95%">
-           <img src="img/sam1.jpg" id="monkey_island_teaser" class="teaser-screenshot" width="95%">
-           <img src="img/sam2.jpg" id="monkey_island_teaser" class="teaser-screenshot" width="95%">
+           <img src="img/Sam-and-Max_teaser.jpg" id="sam_and_max_teaser1" class="teaser-screenshot" width="95%">
+           <img src="img/sam1.jpg" id="sam_and_max_teaser2" class="teaser-screenshot" width="95%">
+           <img src="img/sam2.jpg" id="sam_and_max_teaser3" class="teaser-screenshot" width="95%">
            <span>Screenshots(10)</span>
            <div class="fakten">
             <h3>Fakten & Co.</h3>  
@@ -114,9 +114,14 @@
 <script>
 $(document).ready(function() {
     // ModalPanel
-    $("#monkey_island_teaser").click(function() {
-      $.modal('< <img src="img/monkey_island_teaser.jpg" id="monkey_island_teaser"'+ 'class="teaser-screenshot" width="600px">'
-        ) 
+    $("#sam_and_max_teaser1").click(function() {
+      $.modal('<img src="img/Sam-and-Max_teaser.jpg" width="600px">') 
+    });
+    $("#sam_and_max_teaser2").click(function() {
+      $.modal('<img src="img/sam1.jpg" width="600px">') 
+    });
+    $("#sam_and_max_teaser3").click(function() {
+      $.modal('<img src="img/sam2.jpg" width="600px">') 
     });
 
     $('.bxslider').bxSlider();

@@ -60,9 +60,9 @@
        
         <div class="sider">
           <div class="side-color">
-           <img src="img/dott-1.jpg" id="monkey_island_teaser" class="teaser-screenshot" width="95%">
-           <img src="img/dott-2.jpg" id="monkey_island_teaser" class="teaser-screenshot" width="95%">
-            <img src="img/dott-3.jpg" id="monkey_island_teaser" class="teaser-screenshot" width="95%">
+           <img src="img/dott-1.jpg" id="dott_teaser1" class="teaser-screenshot" width="95%">
+           <img src="img/dott-2.jpg" id="dott_teaser2" class="teaser-screenshot" width="95%">
+           <img src="img/dott-3.jpg" id="dott_teaser3" class="teaser-screenshot" width="95%">
             <span>Screenshots(10)</span>
             <div class="fakten">
               <h3>Fakten & Co.</h3>  
@@ -114,9 +114,14 @@
   <script>
   $(document).ready(function() {
     // ModalPanel
-    $("#monkey_island_teaser").click(function() {
-      $.modal('< <img src="img/monkey_island_teaser.jpg" id="monkey_island_teaser"'+ 'class="teaser-screenshot" width="600px">'
-      ) 
+    $("#dott_teaser1").click(function() {
+      $.modal('<img src="img/dott-1.jpg" width="600px">') 
+    });
+    $("#dott_teaser2").click(function() {
+      $.modal('<img src="img/dott-2.jpg" width="600px">') 
+    });
+    $("#dott_teaser3").click(function() {
+      $.modal('<img src="img/dott-2.jpg" width="600px">') 
     });
 
     $('.bxslider').bxSlider();
