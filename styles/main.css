@@ -11,6 +11,26 @@ html,body {
     cursor: url(../img/Cursor_20x32.gif), auto;
     font-family: MonkeyIsland-1990; 
     font-size: 12px;
+    //min-width: 1024px;
+}
+
+@media screen and (max-width: 1024px) {
+
+    html {
+        width: 1024px;
+    }
+    header {
+        width: 1024px;
+    }
+    body {
+        width: 1024px;
+    }
+    nav {
+        width: 1024px;
+        
+    }
+
+    
 }
 
 body{
@@ -21,7 +41,7 @@ body a, html a {
 }
 
 header{
-
+    //min-width: 1024px;
 }
 
 h1,h2,h2,h4{
