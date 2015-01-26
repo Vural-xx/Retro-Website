@@ -431,6 +431,160 @@ nav ul li:hover > a {
 .down a.backbutton {
 	
 }
+.emu{
+	position: relative;
+	border-radius: 8px;
+	padding: 20px;
+	background-color:white; 
+	margin-bottom: 20px;
+	border: 3px solid #008C74;
+	box-shadow: 10px 10px 10px grey;
+	position: relative;
+}
+
+.emu .emu-image{
+	width: 40px;
+	height: 40px;
+	overflow: hidden;
+	border-radius: 50px;
+	border: 2px solid #008C74;
+	position: absolute;
+	left: -20px;
+	top:-20px;
+	z-index: 2;
+}
+#emu-mainimg {
+	border: 3px solid #008C74;
+	width: 15%;
+}
+
+.emu .emu-text{
+	display: inline-block; 
+	width: 65%;
+}
+
+.emu h2{
+	color: #008C74
+}
+
+.emu a{
+	color: #008C74;
+	text-decoration: none;
+}
+
+}
+.emu a.backbutton {
+	
+}
+.emu p {
+	float: left;
+	width: 65%;
+	margin-bottom: 20px;
+	margin-right: 20px;
+}
+.freeware{
+	position: relative;
+	border-radius: 8px;
+	padding: 20px;
+	background-color:white; 
+	margin-bottom: 20px;
+	border: 3px solid #008C74;
+	box-shadow: 10px 10px 10px grey;
+	position: relative;
+}
+
+.freeware .freeware-image{
+	width: 40px;
+	height: 40px;
+	overflow: hidden;
+	border-radius: 50px;
+	border: 2px solid #008C74;
+	position: absolute;
+	left: -20px;
+	top:-20px;
+	z-index: 2;
+}
+#freeware-mainimg {
+	border: 3px solid #008C74;
+	width: 15%;
+}
+
+.freeware .freeware-text{
+	display: inline-block; 
+	width: 65%;
+}
+
+.freeware h2{
+	color: #008C74
+}
+
+.freeware a{
+	color: #008C74;
+	text-decoration: none;
+}
+
+}
+.freeware a.backbutton {
+	
+}
+.freeware p {
+	float: left;
+	width: 65%;
+	margin-bottom: 20px;
+	margin-right: 20px;
+}
+.tools{
+	position: relative;
+	border-radius: 8px;
+	padding: 20px;
+	background-color:white; 
+	margin-bottom: 20px;
+	border: 3px solid #008C74;
+	box-shadow: 10px 10px 10px grey;
+	position: relative;
+}
+
+.tools .tools-image{
+	width: 40px;
+	height: 40px;
+	overflow: hidden;
+	border-radius: 50px;
+	border: 2px solid #008C74;
+	position: absolute;
+	left: -20px;
+	top:-20px;
+	z-index: 2;
+}
+#tools-mainimg {
+	border: 3px solid #008C74;
+	width: 15%;
+}
+
+.tools .freeware-text{
+	display: inline-block; 
+	width: 65%;
+}
+
+.tools h2{
+	color: #008C74
+}
+
+.tools a{
+	color: #008C74;
+	text-decoration: none;
+}
+
+}
+.tools a.backbutton {
+	
+}
+.tools p {
+	float: left;
+	width: 65%;
+	margin-bottom: 20px;
+	margin-right: 20px;
+}
+
 
 .footer_content {
     padding: 30px;
@@ -546,6 +700,18 @@ nav ul li:hover > a {
 	background-color:#8CB302;
 	clear: both; 
 }
+.trenner.emu_trenner {
+	background-color:#008C74;
+	clear: both; 
+}
+.trenner.freeware_trenner {
+	background-color:#008C74;
+	clear: both; 
+}
+.trenner.tools_trenner {
+	background-color:#008C74;
+	clear: both; 
+}
 
 
 .top10{
@@ -611,8 +777,7 @@ nav ul li:hover > a {
 	z-index: 2;
 }
 .fav img {
-	height: 100px;
-	width: 372px;
+	width: 30%;
 	float: left;
 
 }
