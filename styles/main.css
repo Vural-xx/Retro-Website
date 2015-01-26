@@ -25,6 +25,15 @@ html,body {
     body {
         width: 1024px;
     }
+    
+}
+
+@media screen and (max-width: 600px) {
+    
+    nav {
+        min-width: 400px;
+    }
+    
 }
 
 body{
