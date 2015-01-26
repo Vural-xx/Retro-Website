@@ -749,6 +749,9 @@ nav ul li:hover > a {
 	color: #8CB302;
 }
 
+.test u {
+	color: #8CB302;
+}
 .test .teaser-screenshot{
 	display: inline;
 	cursor: url(../img/pointer.png), auto;
