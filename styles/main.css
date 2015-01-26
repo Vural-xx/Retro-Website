@@ -300,6 +300,9 @@ nav ul li:hover > a {
     background-color: white;
     margin-bottom: 25px;
 }
+.clearboth {
+	clear: both;
+}
 
 .artikel_link {
     position: relative;   
@@ -508,6 +511,7 @@ nav ul li:hover > a {
 }
 .trenner.fav_trenner {
 	background-color:#008C74; 
+	margin-top: 15px;
 }
 .trenner.white_trenner {
 	margin-bottom: 30px;
@@ -584,6 +588,7 @@ nav ul li:hover > a {
 .fav img {
 	height: 100px;
 	width: 372px;
+	float: left;
 
 }
 
@@ -614,7 +619,9 @@ nav ul li:hover > a {
 }
 
 .fav span{
-	display: inline;
+	display: inline-block;
+	width:50%;
+
 }
 
 .fav h2{
@@ -630,6 +637,9 @@ nav ul li:hover > a {
 	float: right;
 	margin-left:8px;
 	cursor: pointer;
+}
+.fav span {
+	float: right;
 }
 
 
