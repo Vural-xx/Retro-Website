@@ -713,7 +713,9 @@ nav ul li:hover > a {
 .test .side-color .fakten{
 	margin-top: 20px;
 	color: white;
-	width: 100%;
+	width: 95%;
+	word-wrap:break-word;
+	font-size: 11px;
 }
 
 .test .side-color .fakten li{
