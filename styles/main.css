@@ -907,3 +907,12 @@ footer ul li img {
     text-decoration: none;
     color: rgb(97, 97, 97);
 }
+
+#kontakt_bild img {
+    width: 73%;
+}
+
+#kontakt_text {
+    width: 160px;
+    float: left
+}
