@@ -283,6 +283,16 @@ nav ul li:hover > a {
 	background-position:50% 50%;
 } 
 
+.box.emulator {
+	background: url(../img/emulatoren.jpg);
+	background-repeat: no-repeat;
+	background-position:50% 50%;
+}
+.box.freeware_slider {
+	background: url(../img/retrogames.gif);
+	background-repeat: no-repeat;
+	background-position:50% 50%;
+}
 #main{
     display: flex;
     justify-content: center;
