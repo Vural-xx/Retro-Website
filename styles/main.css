@@ -247,7 +247,6 @@ nav ul li:hover > a {
     position: absolute;
     bottom: 100px;
     left: 100px;
-    background-color: rgb(140, 179, 2);
     padding: 5px;
     border: 1px solid rgb(96, 96, 96);
 }
@@ -259,8 +258,19 @@ nav ul li:hover > a {
     left: 400px;
     border: 1px solid rgb(96, 96, 96);
     text-decoration: none;
-    background-color: rgb(140, 179, 2);
     padding: 5px;
+}
+
+.box.games h3, .box.games a{
+	   background-color: rgb(140, 179, 2);
+}
+
+.box.emulator h3, .box.emulator a{
+	 background-color:#008C74;
+}
+
+.box.freeware_slider h3, .box.freeware_slider a{
+	 background-color:#008C74;
 }
 
 .bx-prev{
