@@ -166,24 +166,13 @@
   <script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
   <script src="js/jquery.bxslider.min.js"></script>
   <script src="js/jquery.simplemodal-1.4.4.js"></script>
-  
+  <script src="js/script.js"></script>
   <script>
   $(document).ready(function() {
     // ModalPanel
     $("#monkey_island_teaser").click(function() {
-      $.modal('< <img src="img/monkey_island_teaser.jpg" id="monkey_island_teaser"'+ 'class="teaser-screenshot" width="600px">'
+      $.modal('<img src="img/monkey_island_teaser.jpg" id="monkey_island_teaser"'+ 'class="teaser-screenshot" width="600px">'
       ) 
-    });
-
-    $('.bxslider').bxSlider();
-    $(window).scroll(function () {
-      var tempScrollTop = $(window).scrollTop();
-      console.log(tempScrollTop);
-      if (tempScrollTop > 100){
-        $("#banner").addClass("banner-hidden"); 
-      }else if (tempScrollTop < 30){
-         $("#banner").removeClass("banner-hidden"); 
-      }
     });
   });
   </script>

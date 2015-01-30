@@ -145,20 +145,12 @@
   <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
   <script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
   <script src="js/jquery.bxslider.min.js"></script>
-  <script>
-  $(document).ready(function() {
+  <script src="js/script.js"></script>
+  <script type="text/javascript">
+   $(document).ready(function() {
     $('.bxslider').bxSlider({
       auto: true,
       autoControls: true
-    });
-    $(window).scroll(function () {
-      var tempScrollTop = $(window).scrollTop();
-      console.log(tempScrollTop);
-      if (tempScrollTop > 100){
-        $("#banner").addClass("banner-hidden"); 
-      }else if (tempScrollTop < 30){
-         $("#banner").removeClass("banner-hidden"); 
-      }
     });
   });
   </script>

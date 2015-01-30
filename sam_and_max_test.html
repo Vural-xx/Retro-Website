@@ -110,6 +110,7 @@
 <script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
 <script src="js/jquery.bxslider.min.js"></script>
 <script src="js/jquery.simplemodal-1.4.4.js"></script>
+<script src="js/script.js"></script>
 
 <script>
 $(document).ready(function() {
@@ -123,17 +124,6 @@ $(document).ready(function() {
     $("#sam_and_max_teaser3").click(function() {
       $.modal('<img src="img/sam2.jpg" width="600px">') 
     });
-
-    $('.bxslider').bxSlider();
-    $(window).scroll(function () {
-      var tempScrollTop = $(window).scrollTop();
-      console.log(tempScrollTop);
-      if (tempScrollTop > 100){
-        $("#banner").addClass("banner-hidden"); 
-      }else if (tempScrollTop < 30){
-       $("#banner").removeClass("banner-hidden"); 
-     }
-   });
   });
 </script>
 </body>

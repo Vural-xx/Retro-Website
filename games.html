@@ -115,6 +115,7 @@
   <script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
   <script src="js/jquery.bxslider.min.js"></script>
   <script src="js/jquery.simplemodal-1.4.4.js"></script>
+  <script src="js/script.js"></script>
   
   <script>
   $(document).ready(function() {
@@ -130,32 +131,6 @@
     $("#dott_teaser").click(function() {
       $.modal('<img src="img/dott-1.jpg" id="monkey_island_teaser"'+ 'class="teaser-screenshot" width="600px">'
       ) 
-    });
-    /*
-    $("#monkey_island_teaser").click(function() {
-      $.modal(
-        '<ul class="bxslider">'
-        +'<li>'
-         + '<img src="img/monkey_island_teaser.jpg" width="500px">'
-        +'</div>'
-      +'</li>'
-      +'<li>'
-       + '<img src="img/monkey_island_teaser.jpg" width="500px">'
-      + '</li>'
-    + '</ul>'
-      )
-      $('.bxslider').bxSlider(); 
-    });*/
-
-    $('.bxslider').bxSlider();
-    $(window).scroll(function () {
-      var tempScrollTop = $(window).scrollTop();
-      console.log(tempScrollTop);
-      if (tempScrollTop > 100){
-        $("#banner").addClass("banner-hidden"); 
-      }else if (tempScrollTop < 30){
-         $("#banner").removeClass("banner-hidden"); 
-      }
     });
   });
   </script>
