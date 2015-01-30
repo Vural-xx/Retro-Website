@@ -472,7 +472,7 @@ nav ul li:hover > a {
 	z-index: 2;
 }
 
-#emu-mainimg {
+.emu-mainimg {
 	border: 3px solid #008C74;
 	width: 15%;
 }
@@ -521,7 +521,7 @@ nav ul li:hover > a {
 	z-index: 2;
 }
 
-#freeware-mainimg {
+.freeware-mainimg {
 	border: 3px solid #008C74;
 	width: 15%;
 }
