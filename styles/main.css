@@ -208,7 +208,7 @@ nav ul li:hover > a {
 .banderole{
 	height: 50px;
 	color: white;
-	transform:rotate(-30deg);;
+	transform:rotate(-30deg);
 	-moz-transform: rotate(-30deg);
 	-ms-transform: rotate(-30deg);
 	-o-transform: rotate(-30deg);
@@ -339,7 +339,7 @@ nav ul li:hover > a {
     border-radius: 8px; 
     padding: 30px;
     color: rgb(72, 72, 72);
-    //background-color: rgb(230, 230, 223);
+    background-color: rgb(230, 230, 223);
     background-color: white;
     margin-bottom: 25px;
 }
@@ -1078,7 +1078,7 @@ footer ul li img {
     width: 25px;
     height: 25px;
     border: 1px solid rgb(145, 145, 145);
-    //background-color: white;
+    background-color: white;
     -ms-transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
