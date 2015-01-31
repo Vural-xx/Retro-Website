@@ -760,6 +760,10 @@ nav ul li:hover > a {
 	border: 2px solid #8CB302;
 }
 
+.top10 img:hover{
+	cursor: url(../img/pointer.png), auto;
+}
+
 .top10 ul{
 	clear: both;
 	color: #8CB302;
