@@ -58,9 +58,9 @@
         
         <div class="sider">
           <div class="side-color">
-           <img src="img/Sam-and-Max_teaser.jpg" id="sam_and_max_teaser1" class="teaser-screenshot" width="95%">
-           <img src="img/sam1.jpg" id="sam_and_max_teaser2" class="teaser-screenshot" width="95%">
-           <img src="img/sam2.jpg" id="sam_and_max_teaser3" class="teaser-screenshot" width="95%">
+           <img src="img/Sam-and-Max_teaser.jpg" id="sam_and_max_teaser1" alt="Sam and Max Teaser 1" class="teaser-screenshot" width="95%">
+           <img src="img/sam1.jpg" id="sam_and_max_teaser2" alt="Sam and Max Teaser 1" class="teaser-screenshot" width="95%">
+           <img src="img/sam2.jpg" id="sam_and_max_teaser3" alt="Sam and Max Teaser 1" class="teaser-screenshot" width="95%">
            <span>Screenshots(10)</span>
            <div class="fakten">
             <h3>Fakten & Co.</h3>  
@@ -97,12 +97,12 @@
 </div>
 <footer>
  <ul>
-  <li>&#124;</li>
-  <a href="kontakt.html"><li><img class="kontakt_logo" src="./img/kontakt.png"></div> <div class="footer_text"> Kontakt </div></li></a>
-  <li>&#124;</li>
-  <a href="impressum.html"><li><img class="kontakt_logo" src="./img/impressum.png"><div class="footer_text"> Impressum </div></li></a>
-  <li>&#124;</li>        
-</ul>
+    <li>&#124;</li>
+    <a href="kontakt.html"><li><img class="kontakt_logo" alt="Kontakt Logo" src="./img/kontakt.png"></div> <div class="footer_text"> Kontakt </div></li></a>
+    <li>&#124;</li>
+    <a href="impressum.html"><li><img class="kontakt_logo" alt="Impressum Logo" src="./img/impressum.png"><div class="footer_text"> Impressum </div></li></a>
+    <li>&#124;</li>        
+  </ul>
 </footer>
 <!-- Einbinden der Skripte -->
 <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
@@ -113,13 +113,13 @@
 $(document).ready(function() {
     // ModalPanel
     $("#sam_and_max_teaser1").click(function() {
-      $.modal('<img src="img/Sam-and-Max_teaser.jpg" width="600px">') 
+      $.modal('<img src="img/Sam-and-Max_teaser.jpg" alt="Sam and Max Screenshot 1" width="600px">') 
     });
     $("#sam_and_max_teaser2").click(function() {
-      $.modal('<img src="img/sam1.jpg" width="600px">') 
+      $.modal('<img src="img/sam1.jpg" alt="Sam and Max Screenshot 2" width="600px">') 
     });
     $("#sam_and_max_teaser3").click(function() {
-      $.modal('<img src="img/sam2.jpg" width="600px">') 
+      $.modal('<img src="img/sam2.jpg" alt="Sam and Max Screenshot 3" width="600px">') 
     });
   });
 </script>

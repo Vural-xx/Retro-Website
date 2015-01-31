@@ -49,7 +49,7 @@
     <div id="content">
       
       <div class="teaser">
-        <img src="img/guybrush.jpg" class="teaser-image">
+        <img src="img/guybrush.jpg" alt="Guybrush Threepwood von Monkey Island" class="teaser-image">
         <div class="teaser-text">
           <h2>The Secret of Monkey Island</h2>
           <br/>
@@ -60,13 +60,13 @@
         
          <div class="sider">
           <div class="side-color">
-            <img src="img/monkey-1.jpg" id="monkey_island_teaser" class="teaser-screenshot" width="95%">
+            <img src="img/monkey-1.jpg" id="monkey_island_teaser" alt="Monkey Island Teaser" class="teaser-screenshot" width="95%">
           </div>
          </div>
       </div>
 
       <div class="teaser">
-        <img src="img/max.gif" class="teaser-image">
+        <img src="img/max.gif" alt="Max von Sam & Max" class="teaser-image">
         <div class="teaser-text">
           <h2>Sam and Max - Hit The Road</h3>
           <br/>
@@ -76,13 +76,13 @@
         </div>
         <div class="sider">
           <div class="side-color">
-            <img src="img/Sam-and-Max_teaser.jpg" id="sam_teaser" class="teaser-screenshot" width="95%">
+            <img src="img/Sam-and-Max_teaser.jpg" id="sam_teaser" alt="Sam & Max Teaser" class="teaser-screenshot" width="95%">
           </div>
         </div>
       </div>
     
      <div class="teaser">
-        <img src="img/gt.gif" class="teaser-image">
+        <img src="img/gt.gif" alt="Grün Tentakel von Day of The Tentacle" class="teaser-image">
         <div class="teaser-text">
           <h2>Day Of The Tentacle</h3>
           <br/>
@@ -92,7 +92,7 @@
         </div>
         <div class="sider">
           <div class="side-color">
-            <img src="img/dott-1.jpg" id="dott_teaser" class="teaser-screenshot" width="95%">
+            <img src="img/dott-1.jpg" id="dott_teaser" alt="Day of the Tentacle Teaser" class="teaser-screenshot" width="95%">
           </div>
         </div>
       </div>
@@ -101,11 +101,11 @@
     </div>
   </div>
   <footer>
-    <ul>
+  <ul>
         <li>&#124;</li>
-        <a href="kontakt.html"><li><img class="kontakt_logo" src="./img/kontakt.png"></div> <div class="footer_text"> Kontakt </div></li></a>
+        <a href="kontakt.html"><li><img class="kontakt_logo" alt="Kontakt Logo" src="./img/kontakt.png"></div> <div class="footer_text"> Kontakt </div></li></a>
         <li>&#124;</li>
-        <a href="impressum.html"><li><img class="kontakt_logo" src="./img/impressum.png"><div class="footer_text"> Impressum </div></li></a>
+        <a href="impressum.html"><li><img class="kontakt_logo" alt="Impressum Logo" src="./img/impressum.png"><div class="footer_text"> Impressum </div></li></a>
         <li>&#124;</li>        
     </ul>
   </footer>
@@ -118,15 +118,15 @@
   $(document).ready(function() {
     // ModalPanel
     $("#monkey_island_teaser").click(function() {
-      $.modal('<img src="img/monkey-1.jpg" id="monkey_island_teaser"'+ 'class="teaser-screenshot" width="600px">'
+      $.modal('<img src="img/monkey-1.jpg" id="monkey_island_teaser" alt="Monkey Island" class="teaser-screenshot" width="600px">'
       ) 
     });
     $("#sam_teaser").click(function() {
-      $.modal('<img src="img/Sam-and-Max_teaser.jpg" id="monkey_island_teaser"'+ 'class="teaser-screenshot" width="600px">'
+      $.modal('<img src="img/Sam-and-Max_teaser.jpg" id="sam_and_max_teaser" alt="Sam And Max" class="teaser-screenshot" width="600px">'
       ) 
     });
     $("#dott_teaser").click(function() {
-      $.modal('<img src="img/dott-1.jpg" id="monkey_island_teaser"'+ 'class="teaser-screenshot" width="600px">'
+      $.modal('<img src="img/dott-1.jpg" id="day_of_the_tentacle_teaser" alt="Day of The Tentacle" class="teaser-screenshot" width="600px">'
       ) 
     });
   });
