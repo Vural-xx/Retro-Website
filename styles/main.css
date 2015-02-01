@@ -892,7 +892,7 @@ nav ul li:hover > a {
 }
 
 .test .side-color .fakten{
-	margin-top: 20px;
+	margin-top: 10px;
 	color: white;
 	width: 95%;
 	word-wrap:break-word;
@@ -902,6 +902,10 @@ nav ul li:hover > a {
 .test .side-color .fakten li{
 	margin-top: 10px;
 	margin-left: 15px;
+}
+
+.test .side-color .fakten u{
+	color: white;
 }
 
 .test .sider{
